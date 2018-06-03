@@ -59,6 +59,7 @@ let links = [
 let svgId = "svgArea";
 let force = new MyForce(svgId, nodes, links);
 ```
+![usage_2](https://user-images.githubusercontent.com/24271672/40886815-a6f764f0-6779-11e8-8434-440d3411a9ac.JPG)
 
 # Usage (3) ~ override label & circle setter ~
 ```JavaScript
@@ -95,3 +96,4 @@ let links = [
 let svgId = "svgArea";
 let force = new MyForce(svgId, nodes, links);
 ```
+![usage_3](https://user-images.githubusercontent.com/24271672/40886817-b16e54ac-6779-11e8-8fe6-0040b212f377.JPG)
