@@ -82,7 +82,16 @@ class Force {
       .strength(-100);    // クーロン力 (反発力)
     sim.velocityDecay(0.6);    // 摩擦力
 
+    // 2 秒後にシミュレーションを停止させる
+    let ms = 2000;
+    this.stopAfter(ms);
+
     return sim;
+  }
+
+  /* n ミリ秒後にシミュレーションを停止させる */
+  stopAfter(ms) {
+    setTimeout(() => { this.sim.stop(); }, ms);
   }
 
   /* リンク ( g 要素 + line 要素 ) を追加する */
@@ -194,6 +203,9 @@ class Force {
   onDragStart(node) {
     if (!d3.event.active) {
       this.sim.alphaTarget(0.3).restart();
+
+      // 2 秒後にシミュレーションを停止させる
+      this.stopAfter(2000);
     }
     node.fx = node.x;
     node.fy = node.y;
