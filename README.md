@@ -1,7 +1,7 @@
 # class-based-force-graph
 Customizable D3.js force layout graph
 
-# Usage (1) ~ override label setter
+# Usage (1) - override label setter -
 ```JavaScript
 class MyForce extends Force {
 
@@ -30,7 +30,7 @@ let force = new MyForce(svgId, nodes, links);
 
 ![usage_1](https://user-images.githubusercontent.com/24271672/40886797-6bfdb958-6779-11e8-8686-bf2c74f5561c.JPG)
 
-# Usage (2) ~ override label setter (2) ~
+# Usage (2) - override label setter (2) -
 ```JavaScript
 class MyForce extends Force {
 
@@ -61,7 +61,7 @@ let force = new MyForce(svgId, nodes, links);
 ```
 ![usage_2](https://user-images.githubusercontent.com/24271672/40886815-a6f764f0-6779-11e8-8434-440d3411a9ac.JPG)
 
-# Usage (3) ~ override label & circle setter ~
+# Usage (3) - override label & circle setter -
 ```JavaScript
 class MyForce extends Force {
 
